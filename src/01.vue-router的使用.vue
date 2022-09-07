@@ -1,17 +1,9 @@
 <template>
   <div>
     <div class="footer_wrap">
-      <!-- 声明式导航传值
-      方式一: to = "path/?参数=值"
-      接收 $route.query.参数名
-      方式二: 路由规则上使用path/:参数名
-      to=/path/值
-      接收方式 : $route.params.参数名
-       -->
-      <router-link to="/find">发现音乐</router-link>
-      <router-link to="/my">我的音乐</router-link>
-      <router-link to="/friend?name=小明">朋友</router-link>
-      <router-link to="/friend/小华">朋友</router-link>
+      <a href="#/find">发现音乐</a>
+      <a href="#/my">我的音乐</a>
+      <a href="#/friend">朋友</a>
     </div>
     <div class="top">
       <!-- 设置挂载点  当url的hash值切换  显示规则对应的组件到这 -->
@@ -23,6 +15,7 @@
 <script>
 export default {};
 </script>
+
 <style scoped>
 .footer_wrap {
   position: fixed;
